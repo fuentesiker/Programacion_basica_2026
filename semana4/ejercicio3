@@ -1,0 +1,30 @@
+#ALGORITMO
+#Iniciar el programa.
+#Solicitar al usuario la temperatura en grados Celsius.
+#Guardar la temperatura ingresada.
+#Calcular la temperatura en grados Fahrenheit.
+#Calcular la temperatura en Kelvin.
+#Mostrar la temperatura en grados Celsius.
+#Mostrar la temperatura en grados Fahrenheit.
+#Mostrar la temperatura en Kelvin.
+#Comparar si la temperatura en Celsius supera los 37 grados.
+#Mostrar el resultado de la comparación.
+#Finalizar el programa.
+#PSEUDOCODIGO
+#INICIO
+#ESCRIBIR "Ingrese la temperatura en ° Celsius"
+#LEER temperatura
+#fahrenheit <- (temperatura * 9 / 5) + 32
+#kelvin <- temperatura + 273.15
+#ESCRIBIR "Temperatura en ° Celsius:", temperatura
+#ESCRIBIR "Temperatura en ° Fahrenheit:", fahrenheit
+#ESCRIBIR "Temperatura en ° Kelvin:", kelvin
+#ESCRIBIR "¿Supera la temperatura de fiebre (37e°C)?", temperatura > 37
+#FIN
+temperatura=int(input("Ingrese la temperatura en ° Celsius "))
+fahrenheit=(temp * 9/5) + 32
+kelvin=temperatura + 273.15
+print("Temperatura en ° Celsius:",temp)
+print("Temperatura en ° Fahrenheit:",fa)
+print("Temperatura en ° Kelvin:",ke)
+print("¿Supera la temperatura de fiebre (37°C)?",temp>37)
