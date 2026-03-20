@@ -1,0 +1,33 @@
+#ALGORITMO
+#pedir temperatura
+#LEER temperatura
+#comparar
+#dar la respuesta de temperatura
+#PSEUDOCODIGO
+#INICIO
+#LEER temp
+#SI temp < 5 ENTONCES
+#ESCRIBIR "MUY FRIO"
+#SINO SI temp <= 14 ENTONCES
+#ESCRIBIR "FRIO"
+#SINO SI temp <= 24 ENTONCES
+#ESCRIBIR "TEMPLADO"
+#SINO SI temp <= 34 ENTONCES
+#ESCRIBIR "CALIENTE"
+#SINO
+#ESCRIBIR "MUY CALIENTE"
+#FIN SI
+#FIN
+temp = int(input("Temperatura: "))
+if temp < 5:
+    print("MUY FRÍO")
+elif temp <= 14:
+    print("FRÍO")
+elif temp <= 24:
+    print("TEMPLADO")
+elif temp <= 34:
+    print("CALIENTE")
+else:
+    print("MUY CALIENTE")
+
+
