@@ -1,0 +1,46 @@
+#ALGORIMO
+#Pedir al usuario la nota (entre 0.0 y 5.0)
+#Verificar en qué rango se encuentra la nota:
+#Si está entre 4.5 y 5.0 → A (Excelente)
+#Si está entre 4.0 y 4.4 → B (Sobresaliente)
+#Si está entre 3.5 y 3.9 → C (Bueno)
+#Si está entre 3.0 y 3.4 → D (Aceptable)
+#Si es menor a 3.0 → E (Reprobado)
+#Si la nota es menor a 3.0:
+#Verificar si está entre 2.0 y 2.9 → puede habilitar
+#Si es menor a 2.0 → no puede habilitar
+#Mostrar la letra, el estado (aprobado o reprobado) y si aplica habilitación
+#PSEUDOCODIGO
+#INICIO
+#LEER nota
+#SI nota >= 4.5 ENTONCES
+#ESCRIBIR "A - EXCELENTE | Aprobado"
+#SINO SI nota >= 4.0 ENTONCES
+#ESCRIBIR "B - SOBRESALIENTE | Aprobado"
+#SINO SI nota >= 3.5 ENTONCES
+#ESCRIBIR "C - BUENO | Aprobado"
+#SINO SI nota >= 3.0 ENTONCES
+#ESCRIBIR "D - ACEPTABLE | Aprobado"
+#SINO
+#SI nota >= 2.0 ENTONCES
+#ESCRIBIR "E - REPROBADO | Puede presentar habilitación"
+#SINO
+#ESCRIBIR "E - REPROBADO | Sin derecho a habilitación"
+#FIN SI 
+#FIN SI
+FIN
+nota = float(input("Ingrese la nota: "))
+
+if nota >= 4.5:
+    print("A - EXCELENTE | Aprobado")
+elif nota >= 4.0:
+    print("B - SOBRESALIENTE | Aprobado")
+elif nota >= 3.5:
+    print("C - BUENO | Aprobado")
+elif nota >= 3.0:
+    print("D - ACEPTABLE | Aprobado")
+else:
+    if nota >= 2.0:
+        print("E - REPROBADO | Puede presentar habilitación")
+    else:
+        print("E - REPROBADO | Sin derecho a habilitación")
