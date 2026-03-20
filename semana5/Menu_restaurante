@@ -1,0 +1,25 @@
+#ALGORITMO
+#LEER opcion 
+#mostrar plato y costo
+#PSEUDOCODIGO
+#INICIO
+#LEER opcion
+#SI opcion = 1 ENTONCES
+#ESCRIBIR "Bandeja Paisa"
+#SINO SI opcion = 2 ENTONCES
+#ESCRIBIR "Ajiaco"
+#SINO SI opcion = 3 ENTONCES
+#ESCRIBIR "Sancocho"
+#SINO
+#ESCRIBIR "Error"
+#FIN SI
+#FIN
+opcion = int(input("Opción: "))
+if opcion == 1:
+    print("Bandeja Paisa-18.000")
+elif opcion == 2:
+    print("Ajiaco-15.000")
+elif opcion == 3:
+    print("Sancocho-12.000")
+else:
+    print("Opción no válida, intenta de nuevo")
