@@ -1,0 +1,19 @@
+#ALGORITMO
+#Leer compra
+#Si >100000 aplicar descuento
+#PSEUDOCODIGO
+#INICIO
+#LEER compra 
+#SI compra > 100000 ENTONCES
+#total = compra * 0.85
+#SINO
+#total = compra
+#FIN SI
+#ESCRIBIR total
+#FIN
+compra = float(input("Compra: "))
+if compra > 100.000:
+    total = compra * 0.85
+else:
+    total = compra
+print("El total a pagar es:" , total)
