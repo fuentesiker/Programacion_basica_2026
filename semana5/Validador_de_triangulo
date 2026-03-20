@@ -1,0 +1,32 @@
+#ALGORITMO
+#Leer lados
+#alidar triángulo
+#Clasificar
+#PSEUDOCODIGO
+#INICIO
+#LEER a,b,c
+#SI (a+b>c) Y (a+c>b) Y (b+c>a) ENTONCES
+#SI a=b Y b=c ENTONCES
+#ESCRIBIR "Equilátero"
+#SINO SI a=b O b=c O a=c ENTONCES
+#ESCRIBIR "Isósceles"
+#SINO
+#ESCRIBIR "Escaleno"
+#FIN SI
+#SINO
+#ESCRIBIR "No triángulo"
+#FIN SI
+#FIN
+a = float(input("A: "))
+b = float(input("B: "))
+c = float(input("C: "))
+
+if (a+b>c) and (a+c>b) and (b+c>a):
+    if a == b == c:
+        print("Equilátero")
+    elif a == b or b == c or a == c:
+        print("Isósceles")
+    else:
+        print("Escaleno")
+else:
+    print("No es triángulo")
