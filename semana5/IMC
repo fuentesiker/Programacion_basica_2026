@@ -1,0 +1,30 @@
+#ALGORITMO
+#Leer peso y altura
+#Calcular IMC
+#Clasificar
+#PSEUDOCODIGO
+#INICIO
+#LEER peso, altura
+#imc = peso/(altura*altura)
+#SI imc < 18.5 ENTONCES
+#ESCRIBIR "Bajo peso"
+#SINO SI imc <= 24.9 ENTONCES
+#ESCRIBIR "Normal"
+#SINO SI imc <= 29.9 ENTONCES
+#ESCRIBIR "Sobrepeso"
+#SINO
+#ESCRIBIR "Obesidad"
+#FIN SI
+#FIN
+peso = float(input("Peso(en KG): "))
+altura = float(input("Altura(en Metros): "))
+imc = peso / (altura ** 2)
+
+if imc < 18.5:
+    print("Bajo peso")
+elif imc <= 24.9:
+    print("Normal")
+elif imc <= 29.9:
+    print("Sobrepeso")
+else:
+    print("Obesidad")
