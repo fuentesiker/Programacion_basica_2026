@@ -1,0 +1,20 @@
+#ALGORITMO
+#pedir el numero
+#LEER el numero
+#hacer la comparacion
+#ESCRIBIR es par o impar
+#pseudocodigo
+#INICIO
+#ESCRBIR "INGRESE EL NUMERO"
+#LEER num
+#SI num MOD 2 = 0 ENTONCES
+#ESCRIBIR "PAR"
+#SINO
+#ESCRIBIR "IMPAR"
+#FIN SI
+#FIN
+num= int(input("Ingrese el numero:"))
+if num % 2 == 0:
+  print("PAR")
+else:
+  print("IMPAR") 
