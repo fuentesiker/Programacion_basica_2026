@@ -1,0 +1,20 @@
+#Algoritmo acceso_sistema 
+#Escribir 'Usuario:' 
+#Leer usuario
+#Escribir 'Contrasena:' 
+#Leer contrasena 
+#Si usuario = 'admin' Y contrasena = '1234' Entonces  
+#Escribir 'Acceso concedido. Bienvenido!' 
+#Escribir 'Cargando tu perfil...' 
+#SiNo 
+#Escribir 'Acceso denegado. Datos incorrectos.' 
+#FinSi 
+#FinAlgoritmo 
+print("Acceso a el internet")
+a=input("Usuario:")
+b=int(input("Contraseña:"))
+if a == 'admin' and b == 1234 :
+    print("Acceso concedido. Bienvenido!")
+    print("Cargando tu perfil ...")
+else :
+    print("Acceso denegado. Datos incorrectos.")
