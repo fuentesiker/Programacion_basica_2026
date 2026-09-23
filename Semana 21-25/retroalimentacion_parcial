@@ -1,0 +1,72 @@
+package retroalimentacionparcial;
+public class Empleado {
+    String nombre;
+    String cargo;
+    double salarioBase;
+    int anosExperiencia;
+
+    public Empleado() {
+    }
+    //crea objetos
+
+    public Empleado(String nombre, String cargo, double salarioBase, int anosExperiencia) {
+        this.nombre = nombre;
+        this.cargo = cargo;
+        this.salarioBase = salarioBase;
+        this.anosExperiencia = anosExperiencia;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public double getSalarioBase() {
+        return salarioBase;
+    }
+
+    public int getAnosExperiencia() {
+        return anosExperiencia;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+    public void setSalarioBase(double salarioBase) {
+        this.salarioBase = salarioBase;
+    }
+
+    public void setAnosExperiencia(int anosExperiencia) {
+        this.anosExperiencia = anosExperiencia;
+    }
+    public String verDetalle(){
+        return "el empleado se llama " + this.nombre +
+        "\n el cargo del empleado es " + this.cargo +
+        "\n el salario base del empleado " + this.salarioBase +
+        "\n los anos de experiencia es de " + this.anosExperiencia ;
+    }
+    public String trabajar(int horas){
+        return "el empleado esta trabajando" + horas + "horas";    
+    }
+    public String TomarDescanso (){
+        return "El empleado esta descansando";
+    }
+    public String trabajaryDescansar (int horas){
+        return this.trabajar(horas) + this.TomarDescanso() ;
+    }
+    public double CalcularBono (float porcentaje){
+        return salarioBase * porcentaje;
+    }
+    public double CalcularBono (int porcentaje){
+        return salarioBase * porcentaje;
+    }
+    
+}
