@@ -1,0 +1,21 @@
+package herencia30sept;
+public class Gato extends Animal {
+    private String raza;
+    private String color;
+    public Gato(String especie, String raza, String color) {
+        super(especie);
+        this.raza = raza;
+        this.color = color;
+    }
+    public void maullar() {
+        System.out.println("Miau miau");
+    }
+    public void jugar() {
+        System.out.println("El gato " + color + " de raza " + raza + " esta jugando.");
+    }
+    public void mostrarInformacion() {
+        System.out.println("Especie: " + getEspecie());
+        System.out.println("Raza: " + raza);
+        System.out.println("Color: " + color);
+    }
+}
