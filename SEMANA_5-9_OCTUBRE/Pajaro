@@ -1,0 +1,21 @@
+package herencia30sept;
+public class Pajaro extends Animal {
+    private String nombre;
+    private String colorPlumas;
+    public Pajaro(String especie, String nombre, String colorPlumas) {
+        super(especie);
+        this.nombre = nombre;
+        this.colorPlumas = colorPlumas;
+    }
+    public void volar() {
+        System.out.println(nombre + " esta volando.");
+    }
+    public void cantar() {
+        System.out.println(nombre + " esta cantando: pio pio");
+    }
+    public void mostrarInformacion() {
+        System.out.println("Especie: " + getEspecie());
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Color de plumas: " + colorPlumas);
+    }
+}
